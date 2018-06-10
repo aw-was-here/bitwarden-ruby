@@ -67,8 +67,8 @@ then
   fi
 fi
 
-docker pull rtfpessoa/bitwarden-ruby:"${RUBY_API_VERSION}"
-docker run -it --rm --name setup -v "${OUTPUT_DIR}":/bitwarden rtfpessoa/bitwarden-ruby:"${RUBY_API_VERSION}" \
+docker pull aw-was-here/bitwarden-ruby:"${RUBY_API_VERSION}" || :
+docker run -it --rm --name setup -v "${OUTPUT_DIR}":/bitwarden aw-was-here/bitwarden-ruby:"${RUBY_API_VERSION}" \
 ruby docker/setup.rb -o /bitwarden -d "${DOMAIN}" -l "${LETS_ENCRYPT}" -c "${CORE_VERSION}" -w "${WEB_VERSION}"  -r "${RUBY_API_VERSION}"
 
 echo ""

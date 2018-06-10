@@ -54,7 +54,7 @@ then
 fi
 
 SCRIPTS_DIR="$OUTPUT/docker"
-GITHUB_BASE_URL="https://raw.githubusercontent.com/jcs/bitwarden-ruby/master"
+GITHUB_BASE_URL="https://raw.githubusercontent.com/aw-was-here/bitwarden-ruby/local"
 CORE_VERSION="1.14.1"
 WEB_VERSION="1.20.1"
 RUBY_API_VERSION="latest"

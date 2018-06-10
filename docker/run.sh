@@ -61,7 +61,7 @@ function dockerComposeDown() {
 }
 
 function dockerComposePull() {
-  docker-compose -f "${DOCKER_DIR}/docker-compose.yml" pull
+  docker-compose -f "${DOCKER_DIR}/docker-compose.yml" build --pull
 }
 
 function dockerPrune() {
@@ -86,7 +86,7 @@ function restart() {
 }
 
 function pullSetup() {
-  docker pull rtfpessoa/bitwarden-ruby:"${RUBY_API_VERSION}"
+  docker pull aw-was-here/bitwarden-ruby:"${RUBY_API_VERSION}"
 }
 
 # Commands

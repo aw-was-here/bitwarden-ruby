@@ -181,7 +181,7 @@ def docker_compose(docker_directory, http_port, https_port, core_version, web_ve
     |    volumes:
     |      - ../core/attachments:/etc/bitwarden/core/attachments
     |  api:
-    |    image: rtfpessoa/bitwarden-ruby:#{ruby_api_version}
+    |    image: aw-was-here/bitwarden-ruby:#{ruby_api_version}
     |    container_name: api
     |    restart: always
     |    volumes:
